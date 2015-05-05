@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="$Id: index.html,JamilaCS Themes By Eselioglu" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+
+<table cellspacing="0" align="center" id="maintable"><tr><td>
+  <table cellspacing="0" align="center" id="top">
+ <tr>
+ <td class="logo"><img src="<{$xoops_imageurl}>header/logo.jpg" width="778" height="176" alt="" /></td>
+ </tr>
+ 
+  
+ 
+ 
+ </table>
+ 
+ <table cellspacing="0" align="center">
+ <tr>
+
+
+ <td id="leftcolumn">
+
+ <!-- So Blok Baþlangýcý -->
+ <{foreach item=block from=$xoops_lblocks}>
+ <table cellspacing="0">
+  <tr><td class="blockTitle">:: <{$block.title}></td></tr>
+  <tr><td class="blockContent"><{$block.content}></td></tr>
+ </table>
+ <{/foreach}>
+ <!-- Sol Blok Sonu-->
+
+ </td>
+
+ <td id="centercolumn">
+
+ <!-- Orta Blok -->
+ <{if $xoops_showcblock == 1}>
+
+ <table cellspacing="0">
+  <tr>
+  <td id="centerCcolumn" colspan="2">
+
+  <!-- Orta-Orta Blok Baþý -->
+  <{foreach item=block from=$xoops_ccblocks}>
+  <div class="blockTitle"><{$block.title}></div>
+  <div class="blockContent"><{$block.content}></div>
+  <{/foreach}>
+  <!-- Orta Orta Blok Sonu-->
+
+  </td>
+  </tr>
+  <tr>
+  <td id="centerLcolumn">
+
+  <!-- Orta Sol Blok -->
+  <{foreach item=block from=$xoops_clblocks}>
+  <div class="blockTitle"><{$block.title}></div>
+  <div class="blockContent"><{$block.content}></div>
+  <{/foreach}>
+  <!-- Son-->
+
+  </td><td id="centerRcolumn">
+
+  <!-- Orta Sað Blok -->
+  <{foreach item=block from=$xoops_crblocks}>
+  <div class="blockTitle"><{$block.title}></div>
+  <div class="blockContent"><{$block.content}></div>
+  <{/foreach}>
+  <!-- Son -->
+
+  </td>
+  </tr>
+ </table>
+
+ <{/if}>
+ <!-- Orta Blok Sonu -->
+
+ <div id="content"><{$xoops_contents}></div>
+ </td>
+
+ <{if $xoops_showrblock == 1}>
+
+ <td id="rightcolumn">
+ <!-- Sað Blok -->
+ <{foreach item=block from=$xoops_rblocks}>
+ <table cellspacing="0">
+  <tr><td class="blockTitle">:: <{$block.title}></td></tr>
+  <tr><td class="blockContent"><{$block.content}></td></tr>
+ </table>
+ <{/foreach}>
+ <!-- Sað Blok Sonu -->
+ </td>
+
+ <{/if}>
+
+ </tr>
+ </table>
+
+
+
+
+
+ <table cellpadding="0" cellspacing="0" width="100%">
+ <tbody>
+ <tr>
+ <td class="H">
+ <a href="http://www.mozilla.org/products/firefox/"><img style="position:relative" src="<{$xoops_imageurl}>grafik/firefox.png" alt="firefox" align="right"/></a>
+ <a href="http://www.turkxoops.com/modules/wfdownloads/"><img style="position:relative" src="<{$xoops_imageurl}>grafik/jamilacs.gif" alt="JamilaCS" align="right"/></a>
+  <a href="http://www.turkxoops.com/"><img style="position:relative" src="<{$xoops_imageurl}>grafik/turkxoops.gif" alt="turkxoops" align="right"/></a>
+ </td>
+ 
+ </tr>
+ 
+
+
+
+
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
